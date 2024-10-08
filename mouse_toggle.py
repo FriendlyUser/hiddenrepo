@@ -25,12 +25,12 @@ def random_typing():
 def random_action():
     # Randomly select one of the actions to perform
     actions = [random_mouse_movement, random_click, random_typing]
-    random.choice(actions)()
+    random.choice(actions)()Testing actions!Testing actions!
 
 if __name__ == "__main__":
     while True:
         print("Performing random action...")
         random_action()  # Perform a random action
-        random_time = random.uniform(60, 5*60) 
+        random_time = random.uniform(20, 2*60) 
         print("random time", random_time)
         time.sleep(random_time)  # Wait for 5 minutes (300 seconds)
