@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery and Bootstrap Test</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+/*!
+ * jQuery JavaScript Library v3.5.1
+ * https://jquery.com/
+ *
+ * Includes Sizzle.js
+ * https://sizzlejs.com/
+ *
+ * Copyright JS Foundation and other contributors
+ * Released under the MIT license
+ * https://jquery.org/license
+ *
+ * Date: 2020-05-04T22:49Z
+ */
+(function (global, factory) {
+  "use strict";
+  if (typeof module === "object" && typeof module.exports === "object") {
+    module.exports = global.document
+      ? factory(global, true)
+      : function (w) {
+          if (!w.document) {
+            throw new Error("jQuery requires a window with a document");
+          }
+          return factory(w);
+        };
+  } else {
+    factory(global);
+  }
+})(
+  typeof window !== "undefined" ? window : this,
+  function (window, noGlobal) {
+    "use strict";
+    var arr = [];
+    var getProto = Object.getPrototypeOf;
+    var slice = arr.slice;
+    var flat = arr.flat
+      ? function (array) {
+          return arr.flat.call(array);
+        }
+      : function (array) {
+          return arr.concat.apply([], array);
+        };
+    var push = arr.push;
+    var indexOf = arr.indexOf;
+    var class2type = {};
+    var toString = class2type.toString;
+    var hasOwn = class2type.hasOwnProperty;
+    var fnToString = hasOwn.toString;
+    var ObjectFunctionString = fnToString.call(Object);
+    var support = {};
+    var isFunction = function isFunction(obj) {
+      return (
+        typeof obj === "function" && typeof obj.nodeType !== "number"
+      );
+    };
+
+    var isWindow = function isWindow(obj) {
+      return obj != null && obj === obj.window;
+    };
+
+var preservedScriptAttributes = {
+	type: true,
+	src: true,
+	nonce: true,
+	noModule: true
+}
+
+    // Other parts of the jQuery library here...
+
+    // Ensure jQuery runs on script load
+    jQuery(document).ready(function () {
+      main();
+    });
+
+    var __jQuery_main__ = function main() {
+      console.log("jQuery has loaded successfully!");
+    };
+
+    if (typeof noGlobal === "undefined") {
+      window.jQuery = window.$ = jQuery;
+    }
+
+    return jQuery;
+  }
+);
+
+/*! jQuery Validation Plugin v1.17.0
+ * https://jqueryvalidation.org/
+ * Copyright (c) 2017 Jörn Zaefferer
+ * Released under the MIT license
+ */
+
+// Unobtrusive validation support library for jQuery and jQuery Validate
+// lightweight module
+(function (factory) {
+  if (typeof define === "function" && define.amd) {
+    define("jquery.validate.unobtrusive", ["jquery-validation"], factory);
+  } else if (typeof module === "object" && module.exports) {
+    module.exports = factory(require("jquery-validation"));
+  } else {
+    // Browser global
+    jQuery.validator.unobtrusive = factory(jQuery);
+  }
+})(function ($) {
+  var $jQval = $.validator,
+    adapters,
+    data_validation = "unobtrusiveValidation";
+
+  // Methods here...
+  /**
+   * core jQuery validator unobtrusive entry point
+   */
+  jQuery(function () {
+    $jQval.unobtrusive.parse(document);
+  });
+
+  return $jQval.unobtrusive;
+});
+
+/*! Bootstrap v4.3.1
+ * https://getbootstrap.com/
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+(function (global, factory) {
+  typeof exports === "object" && typeof module !== "undefined"
+    ? factory(exports, require("jquery"))
+    : typeof define === "function" && define.amd
+    ? define(["exports", "jquery"], factory)
+    : ((global = global || self),
+      factory((global.bootstrap = {}), global.jQuery));
+})(this, function (exports, $) {
+  "use strict";
+
+  // Bootstrap logic here...
+  var __Bootstrap_main__ = function main() {
+    console.log("Bootstrap has loaded successfully!");
+  };
+
+  if (typeof noGlobal === "undefined") {
+    window.Bootstrap = window.Bootstrap || window.bootstrap;
+  }
+
+  return Bootstrap;
+});
+
+var __Bootstrap_main__ = function main() {
+    console.log("Bootstrap has loaded successfully!");
+  };
+var __jQuery_main__ = function main() {
+  console.log("jQuery has loaded successfully!");
+};
+
+// Initialize the main function which tests the core functionality
+function main() {
+  try {
+    __jQuery_main__();
+    __Bootstrap_main__();
+  } catch (error) {
+    console.error("Error during the main execution:", error);
+  }
+}
+
+// Running the main entry point
+document.addEventListener("DOMContentLoaded", main);
+</script>
+
+</body>
+</html>
+

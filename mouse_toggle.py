@@ -25,7 +25,7 @@ def random_typing():
 def random_action():
     # Randomly select one of the actions to perform
     actions = [random_mouse_movement, random_click, random_typing]
-    random.choice(actions)()Testing actions!Testing actions!
+    random.choice(actions)
 
 if __name__ == "__main__":
     while True:

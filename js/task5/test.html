@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Simulation with P5.js and Matter.js</title>
+    <!-- Load P5.js -->
+
+</head>
+<body>
+    <script>
+        // Matter.js Module - Simulating physics in the Engine
+(function(f){if(typeof exports==="object"&&typeof module!=="undefined"){module.exports=f()}else if(typeof define==="function"&&define.amd){define([],f)}else{var g;if(typeof window!=="undefined"){g=window}else if(typeof global!=="undefined"){g=global}else if(typeof self!=="undefined"){g=self}else{g=this}g.Matter = f()}})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(_dereq_,module,exports){
+// Body.js Module
+var Body = {};
+module.exports = Body;
+var Vertices = _dereq_('../geometry/Vertices');
+var Vector = _dereq_('../geometry/Vector');
+var Sleeping = _dereq_('../core/Sleeping');
+var Render = _dereq_('../render/Render');
+var Common = _dereq_('../core/Common');
+var Bounds = _dereq_('../geometry/Bounds');
+var Axes = _dereq_('../geometry/Axes');
+
+(function() {
+    Body._inertiaScale = 4;
+    Body._nextCollidingGroupId = 1;
+    Body._nextNonCollidingGroupId = -1;
+    Body._nextCategory = 0x0001;
+
+    Body.create = function(options) {
+        var defaults = {
+            id: Common.nextId(),
+            type: 'body',
+            label: 'Body',
+            parts: [],
+            plugin: {},
+            angle: 0,
+            vertices: Vertices.fromPath('L 0 0 L 40 0 L 40 40 L 0 40'),
+            position: { x: 0, y: 0 },
+            force: { x: 0, y: 0 },
+            torque: 0,
+            positionImpulse: { x: 0, y: 0 },
+            constraintImpulse: { x: 0, y: 0, angle: 0 },
+            totalContacts: 0,
+            speed: 0,
+            angularSpeed: 0,
+            velocity: { x: 0, y: 0 },
+            angularVelocity: 0,
+            isSensor: false,
+            isStatic: false,
+            isSleeping: false,
+            motion: 0,
+            sleepThreshold: 60,
+            density: 0.001,
+            restitution: 0,
+            friction: 0.1,
+            frictionStatic: 0.5,
+            frictionAir: 0.01,
+            collisionFilter: {
+                category: 0x0001,
+            },
+        };
+    };
+})();
+},{}]},{},[1])(1)
+});
+
+// P5.js Module - Adding rendering drawing
+/*! P5.js v0.8.0 April 08, 2019 */
+(function(root, factory) {
+if (typeof define === 'function' && define.amd)
+    define('p5.play', ['p5'], function(p5) { (factory(p5)); });
+else if (typeof exports === 'object')
+    factory(require('@code-dot-org/p5'));
+else
+    factory(root.p5);
+}(this, function(p5) {
+p5.prototype.registerMethod('init', function p5PlayInit() {
+    this.camera = new Camera(this, 0, 0, 1);
+    this.camera.init = false;
+    this.angleMode(this.DEGREES);
+    this.frameRate(DEFAULT_FRAME_RATE);
+    this._defaultCanvasSize = {
+        width: 400,
+        height: 400
+    };
+    var startDate = new Date();
+    this._startTime = startDate.getTime();
+    this._tempCanvas = document.createElement('canvas');
+});
+}));
+
+// SlingShot.js Module - Handling elastic constraint like slingshot
+class Slingshot {
+    constructor(bodyA, pointB) {
+        var options = {
+            bodyA: bodyA,
+            pointB: pointB,
+            stiffness: 0.04,
+            length: 100
+        };
+        this.sling = Constraint.create(options);
+        this.pointB = pointB;
+
+        World.add(world, this.sling);
+    }
+    fly() {
+        this.sling.bodyA = null;
+    }
+    display() {
+        if (this.sling.bodyA) {
+            var pointA = this.sling.bodyA.position;
+            var pointB = this.pointB;
+
+            strokeWeight(4);
+            stroke("turquoise");
+            line(pointA.x, pointA.y, pointB.x, pointB.y);
+        }
+    }
+}
+
+// Ground.js - Module for static ground body
+class Ground {
+    constructor() {
+        var ground_options = {
+            isStatic: true
+        };
+
+        this.ground = Bodies.rectangle(450, 390, 900, 20, ground_options);
+        World.add(world, this.ground);
+    }
+    display() {
+        noStroke();
+        fill(188, 67, 67);
+        rectMode(CENTER);
+        rect(this.ground.position.x, this.ground.position.y, 900, 20);
+    }
+}
+
+// Main Entry - Initializing the Sketch
+function main() {
+    // Setup Matter.js
+    const Engine = Matter.Engine;
+    const World = Matter.World;
+    const Bodies = Matter.Bodies;
+    const Constraint = Matter.Constraint;
+
+    var engine, world;
+    var holder, ball, ground;
+    var stand1, stand2;
+    var ball;
+    var slingShot;
+    var fruit;
+
+    // Load Images
+    function preload() {
+        backgroundImg = loadImage("background.png");
+        fruit = loadImage("melon.png");
+        g = loadImage("basket.png");
+    }
+
+    // Create Elements
+    function setup() {
+        createCanvas(900, 400);
+        engine = Engine.create();
+        world = engine.world;
+        Engine.run(engine);
+        ground = new Ground();
+
+        // Create Player and Sling
+        ball = Bodies.circle(50, 200, 20);
+        World.add(world, ball);
+        slingShot = new Slingshot(ball, { x: 100, y: 100 }); 
+    }
+
+    // Draw Loop
+    function draw() {
+        background(backgroundImg);
+        ground.display();
+        
+        // Display Elements and Images
+        imageMode(CENTER);
+        image(fruit, ball.position.x, ball.position.y, 40, 40);
+        image(g, 350, 270);
+        slingShot.display();
+    }
+
+    // User Interaction Handling
+    function mouseDragged() {
+        Matter.Body.setPosition(ball, { x: mouseX, y: mouseY });
+    }
+    function mouseReleased() {
+        slingShot.fly();
+    }
+
+    // Run P5.js preload, setup, draw
+    preload();
+    setup();
+}
+
+// Run Main
+main();
+
+
+    </script>
+</body>
+</html>
