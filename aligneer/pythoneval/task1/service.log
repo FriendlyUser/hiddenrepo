@@ -1,0 +1,12 @@
+2024-11-27 08:10:48,916 ERROR: Failed to create database connection pool: connection to server at "postgres.c58u848ggx5b.us-west-1.rds.amazonaws.com" (184.72.44.85), port 5432 failed: FATAL:  password authentication failed for user "readonly_user"
+connection to server at "postgres.c58u848ggx5b.us-west-1.rds.amazonaws.com" (184.72.44.85), port 5432 failed: FATAL:  no pg_hba.conf entry for host "99.199.179.72", user "readonly_user", database "pagila", no encryption
+
+2024-11-27 08:15:19,236 INFO: Database connection pool created successfully
+2024-11-27 08:15:19,248 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.70:5000
+2024-11-27 08:15:19,256 INFO: [33mPress CTRL+C to quit[0m
+2024-11-27 08:18:42,869 ERROR: Error in route process_data: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2024-11-27 08:18:42,870 INFO: 127.0.0.1 - - [27/Nov/2024 08:18:42] "[35m[1mPOST /process HTTP/1.1[0m" 500 -
+2024-11-27 08:18:47,972 INFO: 127.0.0.1 - - [27/Nov/2024 08:18:47] "POST /process HTTP/1.1" 200 -
