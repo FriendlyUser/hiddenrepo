@@ -15,7 +15,7 @@ class CustomerDatabase:
             host='postgres.c58u848ggx5b.us-west-1.rds.amazonaws.com',
             port=5432,
             user='readonly_user',
-            password='your_password',
+            password='labeling_now',
             database='pagila'
         )
 

@@ -4,17 +4,39 @@ Given the following revised prompt:
 
 Revised Prompt:
 ---
-I am encountering an issue with a dynamic pricing function in Python that is not behaving as intended. The `update_prices` function is designed to adjust item prices in real time based on specified demand factors. However, it is not updating the prices as expected. Below is the code snippet:
+ICan you refactor this database querying script? It's a simple tool that retrieves customer information using Python's psycopg2 library, but it slows down a lot with larger ranges of customer IDs. Also, I haven't implemented any concurrency.
 
-```python
-def update_prices(items, demand_factors):
-    for item in items:
-        price = item['base_price'] * demand_factors.get(item['id'], 1)
-        item['price'] == price
-    return items
-```
+Here's the code:
 
-Could you help identify and debug any syntax or logic errors in this code? Additionally, I would appreciate suggestions for improvements to enhance the function's performance, reliability, and maintainability.
+import psycopg2
+
+def get_customer_info(customer_id):
+    conn = psycopg2.connect(
+        host='postgres.c58u848ggx5b.us-west-1.rds.amazonaws.com',
+        port=5432,
+        user='readonly_user',
+        password='your_password',
+        database='pagila'
+    )
+    cur = conn.cursor()
+    cur.execute("SELECT first_name, last_name, email FROM customer WHERE customer_id = %s", (customer_id,))
+    result = cur.fetchone()
+    conn.close()
+    return result
+
+def get_customers_info(start_id, end_id):
+    customer_info_list = []
+    for customer_id in range(start_id, end_id + 1):
+        info = get_customer_info(customer_id)
+        if info:
+            customer_info_list.append(info)
+    return customer_info_list
+
+start = 1
+end = 1000
+customers = get_customers_info(start, end)
+print("Customer information:", customers)
+Could you refactor it to improve performance by adding threading or async?
 ---
 
 We want to analyze using it using the following requirements in the document:
@@ -611,16 +633,20 @@ Choose the version that best fits your needs based on:
 - Your comfort level with async programming
 ---
 
-Code Run Log Output:
+Code Run Log Output Timings with cProfile:
 
 Response 1:
 ---
 
+[(..., 'ENRIQUE.FORSYTHE@sakilacustomer.org'), ('WADE', 'DELVALLE', 'WADE.DELVALLE@sakilacustomer.org'), ('AUSTIN', 'CINTRON', 'AUSTIN.CINTRON@sakilacustomer.org')]
+
+ 153645 function calls (146979 primitive calls) in 12.100 seconds
 ---
 
 Response 2:
 ---
-
+INFO:__main__:Customer: ('ELIZABETH', 'BROWN', 'ELIZABETH.BROWN@sakilacustomer.org')
+37042 function calls (36158 primitive calls) in 3.241 seconds
 ---
 
 For each response 
