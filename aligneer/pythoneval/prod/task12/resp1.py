@@ -1,7 +1,7 @@
 import pytest
 import cv2
 import numpy as np
-from your_module import process_frame  # Replace 'your_module' with the actual module name
+from main import process_frame  # Replace 'your_module' with the actual module name
 
 def test_process_frame_with_valid_input():
     # Create a simple black image with a white square in the middle
