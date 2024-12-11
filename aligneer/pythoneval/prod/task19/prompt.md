@@ -5,7 +5,7 @@ We need to refactor the existing Python function `count_word_frequency` so that 
 1. Read the file line by line using a generator, rather than `f.read()`, to manage memory usage better.
 2. Implement robust error handling for file operations, including managing exceptions for cases where the file might not exist or cannot be opened.
 
-The current implementation is as follows (format the code neatly but **do not modify it**):
+The current implementation is as follows:
 
 ```python
 def count_word_frequency(filename):
