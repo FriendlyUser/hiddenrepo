@@ -137,3 +137,41 @@ Trouvez le volume du tétraèdre dans le premier octant délimité par le plan
 \]
 
 --
+
+
+en:
+
+find the derivative of y with respect to the appropriate
+variable.
+
+french:
+
+Trouvez la dérivée de \(y\) par rapport à la variable appropriée.
+
+--
+
+-- en:
+
+find the derivative of y with respect to the appropriate
+variable.
+
+\[
+y = \sin^{-1}(1 - t)
+\]
+
+--
+
+en:
+
+
+\[
+y = \sec^{-1}(2s + 1)
+\]
+
+french:
+
+Trouvez la dérivée de \(y\) par rapport à la variable appropriée.
+
+solution
+
+![alt text](image-1.png)
