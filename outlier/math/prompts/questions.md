@@ -175,3 +175,28 @@ Trouvez la dérivée de \(y\) par rapport à la variable appropriée.
 solution
 
 ![alt text](image-1.png)
+
+
+--
+
+
+en:
+
+
+![alt text](image-2.png)
+
+find the value of (f \circ g)' at the given value of  x.
+
+
+
+
+\[
+f(u) = u^5 + 1, \, u = g(x) = \sqrt{x}, \, x = 1
+\]
+
+
+french:
+
+
+
+Trouver la valeur de \((f \circ g)'\) à la valeur donnée de \(x\).
