@@ -200,3 +200,21 @@ french:
 
 
 Trouver la valeur de \((f \circ g)'\) à la valeur donnée de \(x\).
+
+
+--
+
+en:
+
+The translation of "Find the definite integral for the given period" into French is:
+
+
+french:
+
+
+**"Trouvez l'intégrale définie pour la période donnée."**
+
+
+\int \frac{3x^2 - 7x}{3x + 2} \, dx.
+
+--
