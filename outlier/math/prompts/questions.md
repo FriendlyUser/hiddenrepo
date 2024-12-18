@@ -218,3 +218,49 @@ french:
 \int \frac{3x^2 - 7x}{3x + 2} \, dx.
 
 --
+
+
+en:
+
+https://www.wolframalpha.com/input?i=derivative+of+x%5E4+cosx
+
+
+derivative of x^4 cosx
+
+french:
+
+
+--
+
+
+--
+
+Trouvez la dérivée de \(y\) par rapport à la variable appropriée.
+
+Here are 15 equations similar to \( f(x) = x^4 \cos(x) \):
+
+1. \( g(x) = x^3 \sin(x) \)  
+
+
+2. \( h(x) = x^2 \sec(x) \) 
+
+
+
+3. \( k(x) = x^5 \tan(x) \) 
+
+--
+4. \( m(x) = x^4 \cot(x) \)  
+5. \( p(x) = x^3 \csc(x) \)  
+6. \( q(x) = x^2 \arcsin(x) \)  
+7. \( r(x) = x^3 \arccos(x) \)  
+8. \( s(x) = x^4 \arctan(x) \)  
+9. \( t(x) = x^2 \text{sech}(x) \)  
+10. \( u(x) = x^3 \text{coth}(x) \)  
+11. \( v(x) = x^5 \cos^2(x) \)  
+12. \( w(x) = x^2 \sin^3(x) \)  
+13. \( z(x) = x^3 \cos^{-1}(x) \)  
+14. \( y(x) = x^4 \tan^{-1}(x) \)  
+15. \( a(x) = x^3 \log(\sin(x)) \)  
+
+Let me know if you need more details on these!
+---
