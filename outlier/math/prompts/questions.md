@@ -260,9 +260,12 @@ Here are 15 equations similar to \( f(x) = x^4 \cos(x) \):
 
 7. \( r(x) = x^3 \arccos(x) \)  
 
--- 
 8. \( s(x) = x^4 \arctan(x) \)  
+
+
 9. \( t(x) = x^2 \text{sech}(x) \)  
+
+-- 
 10. \( u(x) = x^3 \text{coth}(x) \)  
 11. \( v(x) = x^5 \cos^2(x) \)  
 12. \( w(x) = x^2 \sin^3(x) \)  
