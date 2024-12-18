@@ -248,8 +248,9 @@ Here are 15 equations similar to \( f(x) = x^4 \cos(x) \):
 
 3. \( k(x) = x^5 \tan(x) \) 
 
---
 4. \( m(x) = x^4 \cot(x) \)  
+
+--
 5. \( p(x) = x^3 \csc(x) \)  
 6. \( q(x) = x^2 \arcsin(x) \)  
 7. \( r(x) = x^3 \arccos(x) \)  
