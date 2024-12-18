@@ -237,6 +237,8 @@ french:
 
 Trouvez la dérivée de \(y\) par rapport à la variable appropriée.
 
+Trouvez la dérivée de \(y\) par rapport à x.
+
 Here are 15 equations similar to \( f(x) = x^4 \cos(x) \):
 
 1. \( g(x) = x^3 \sin(x) \)  
@@ -250,10 +252,15 @@ Here are 15 equations similar to \( f(x) = x^4 \cos(x) \):
 
 4. \( m(x) = x^4 \cot(x) \)  
 
---
-5. \( p(x) = x^3 \csc(x) \)  
+5. \( y(x) = x^3 \csc(x) \)  
+
+
 6. \( q(x) = x^2 \arcsin(x) \)  
+
+
 7. \( r(x) = x^3 \arccos(x) \)  
+
+-- 
 8. \( s(x) = x^4 \arctan(x) \)  
 9. \( t(x) = x^2 \text{sech}(x) \)  
 10. \( u(x) = x^3 \text{coth}(x) \)  
