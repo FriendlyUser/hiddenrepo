@@ -545,11 +545,17 @@ Let me know if you need more details on these!
    - \( g_1(x) = x^3 \sin(x) \)
    - \( g_2(x) = x^4 \sin(x) \)
    - \( g_3(x) = x^5 \sin(x) \)
+   --
    - \( g_4(x) = x^6 \sin(x) \)
+   --
    - \( g_5(x) = x^7 \sin(x) \)
+   --
    - \( g_6(x) = x^8 \sin(x) \)
+   --
    - \( g_7(x) = x^9 \sin(x) \)
+   --
    - \( g_8(x) = x^{10} \sin(x) \)
+   --
    - \( g_9(x) = x^{11} \sin(x) \)
    - \( g_{10}(x) = x^{12} \sin(x) \)
 
@@ -720,4 +726,3 @@ Let me know if you need more details on these!
     - \( a_8(x) = x^{10} \log(\sin(x)) \)
     - \( a_9(x) = x^{11} \log(\sin(x)) \)
     - \( a_{10}(x) = x^{12} \log(\sin(x)) \)
-    
