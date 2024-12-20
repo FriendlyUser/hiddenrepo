@@ -544,6 +544,7 @@ Let me know if you need more details on these!
 1. For \( g(x) = x^3 \sin(x) \):
    - \( g_1(x) = x^3 \sin(x) \)
    - \( g_2(x) = x^4 \sin(x) \)
+   --
    - \( g_3(x) = x^5 \sin(x) \)
    --
    - \( g_4(x) = x^6 \sin(x) \)
@@ -560,16 +561,34 @@ Let me know if you need more details on these!
    - \( g_{10}(x) = x^{12} \sin(x) \)
 
 2. For \( h(x) = x^2 \sec(x) \):
+   --
    - \( h_1(x) = x^2 \sec(x) \)
+   --
    - \( h_2(x) = x^3 \sec(x) \)
+   --
    - \( h_3(x) = x^4 \sec(x) \)
+   --
    - \( h_4(x) = x^5 \sec(x) \)
+   --
    - \( h_5(x) = x^6 \sec(x) \)
+   --
    - \( h_6(x) = x^7 \sec(x) \)
+   --
    - \( h_7(x) = x^8 \sec(x) \)
+   -- 
    - \( h_8(x) = x^9 \sec(x) \)
+   --
    - \( h_9(x) = x^{10} \sec(x) \)
+   -- 
    - \( h_{10}(x) = x^{11} \sec(x) \)
+   --
+
+   -  \( h_{11}(x) = x^{12} \sec(x) \)
+   --
+
+   -  \( h_{13}(x) = x^{13} \sec(x) \)
+
+   --
 
 3. For \( k(x) = x^5 \tan(x) \):
    - \( k_1(x) = x^5 \tan(x) \)
