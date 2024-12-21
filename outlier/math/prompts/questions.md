@@ -589,6 +589,22 @@ Let me know if you need more details on these!
    -  \( h_{13}(x) = x^{13} \sec(x) \)
 
    --
+   -  \( h_{14}(x) = x^{14} \sec(x) \)
+
+   --
+
+   -  \( h_{14}(x) = x^{14} \sec(x) \)
+   --
+   -  \( h_{14}(x) = x^{15} \sec(x) \)
+   --
+   -  \( h_{16}(x) = x^{16} \sec(x) \)
+   --
+   - \( h_{16}(x) = x^{17} \sec(x) \)
+   --
+   - \( h_{16}(x) = x^{18} \sec(x) \)
+   --
+   - y(x) =  x^{18} \sec(x) 
+   --
 
 3. For \( k(x) = x^5 \tan(x) \):
    - \( k_1(x) = x^5 \tan(x) \)
