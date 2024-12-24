@@ -629,8 +629,11 @@ Let me know if you need more details on these!
    - \( k_{10}(x) = x^{14} \tan(x) \)
 
 4. For \( m(x) = x^4 \cot(x) \):
+   --
    - \( m_1(x) = x^4 \cot(x) \)
+   --
    - \( m_2(x) = x^5 \cot(x) \)
+   --
    - \( m_3(x) = x^6 \cot(x) \)
    - \( m_4(x) = x^7 \cot(x) \)
    - \( m_5(x) = x^8 \cot(x) \)
