@@ -605,16 +605,26 @@ Let me know if you need more details on these!
    --
    - y(x) =  x^{18} \sec(x) 
    --
+   - y(x) = x^{18} \sec(x)
+   --
 
 3. For \( k(x) = x^5 \tan(x) \):
+   --
    - \( k_1(x) = x^5 \tan(x) \)
+   --
    - \( k_2(x) = x^6 \tan(x) \)
    - \( k_3(x) = x^7 \tan(x) \)
+   --
    - \( k_4(x) = x^8 \tan(x) \)
+   --
    - \( k_5(x) = x^9 \tan(x) \)
+   --
    - \( k_6(x) = x^{10} \tan(x) \)
+   --
    - \( k_7(x) = x^{11} \tan(x) \)
+   --
    - \( k_8(x) = x^{12} \tan(x) \)
+   --
    - \( k_9(x) = x^{13} \tan(x) \)
    - \( k_{10}(x) = x^{14} \tan(x) \)
 
