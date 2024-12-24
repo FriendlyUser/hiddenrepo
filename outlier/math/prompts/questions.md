@@ -635,10 +635,15 @@ Let me know if you need more details on these!
    - \( m_2(x) = x^5 \cot(x) \)
    --
    - \( m_3(x) = x^6 \cot(x) \)
+   --
    - \( m_4(x) = x^7 \cot(x) \)
+   --
    - \( m_5(x) = x^8 \cot(x) \)
+   --
    - \( m_6(x) = x^9 \cot(x) \)
+   --
    - \( m_7(x) = x^{10} \cot(x) \)
+   --
    - \( m_8(x) = x^{11} \cot(x) \)
    - \( m_9(x) = x^{12} \cot(x) \)
    - \( m_{10}(x) = x^{13} \cot(x) \)
