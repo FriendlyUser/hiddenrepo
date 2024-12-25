@@ -645,11 +645,16 @@ Let me know if you need more details on these!
    - \( m_7(x) = x^{10} \cot(x) \)
    --
    - \( m_8(x) = x^{11} \cot(x) \)
+   --
    - \( m_9(x) = x^{12} \cot(x) \)
+   --
    - \( m_{10}(x) = x^{13} \cot(x) \)
+   --
 
 5. For \( y(x) = x^3 \csc(x) \):
+   --
    - \( y_1(x) = x^3 \csc(x) \)
+   --
    - \( y_2(x) = x^4 \csc(x) \)
    - \( y_3(x) = x^5 \csc(x) \)
    - \( y_4(x) = x^6 \csc(x) \)
