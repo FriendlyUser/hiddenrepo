@@ -656,14 +656,24 @@ Let me know if you need more details on these!
    - \( y_1(x) = x^3 \csc(x) \)
    --
    - \( y_2(x) = x^4 \csc(x) \)
+   --
    - \( y_3(x) = x^5 \csc(x) \)
+   --
    - \( y_4(x) = x^6 \csc(x) \)
+   --
    - \( y_5(x) = x^7 \csc(x) \)
+   --
    - \( y_6(x) = x^8 \csc(x) \)
+   --
    - \( y_7(x) = x^9 \csc(x) \)
+   --
    - \( y_8(x) = x^{10} \csc(x) \)
+   --
    - \( y_9(x) = x^{11} \csc(x) \)
+   --
    - \( y_{10}(x) = x^{12} \csc(x) \)
+   --
+   - \( y_{10}(x) = x^{13} \csc(x) \)
 
 6. For \( q(x) = x^2 \arcsin(x) \):
    - \( q_1(x) = x^2 \arcsin(x) \)
