@@ -674,6 +674,21 @@ Let me know if you need more details on these!
    - \( y_{10}(x) = x^{12} \csc(x) \)
    --
    - \( y_{10}(x) = x^{13} \csc(x) \)
+   --
+   - \( y_{14}(x) = x^{14} \csc(x) \)
+   --
+   -  y(x)= x^15 \csc(x) 
+   --
+   - y(x) = x^{16} \csc(x)
+   --
+   - y(x) = x^{17} \csc(x)
+   --
+   - y(x)=x^{18} \csc(x)
+   --
+   - y(x)=x^{19} \csc(x)
+   --
+   - y(x)=x^{20} \csc(x)
+   --
 
 6. For \( q(x) = x^2 \arcsin(x) \):
    - \( q_1(x) = x^2 \arcsin(x) \)
