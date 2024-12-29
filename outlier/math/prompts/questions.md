@@ -689,21 +689,33 @@ Let me know if you need more details on these!
    --
    - y(x)=x^{20} \csc(x)
    --
+   - y(x)=x^{21} \csc(x)
+   --
+   done.
 
 6. For \( q(x) = x^2 \arcsin(x) \):
    - \( q_1(x) = x^2 \arcsin(x) \)
+   --
    - \( q_2(x) = x^3 \arcsin(x) \)
+   --
    - \( q_3(x) = x^4 \arcsin(x) \)
+   --
    - \( q_4(x) = x^5 \arcsin(x) \)
+   --
    - \( q_5(x) = x^6 \arcsin(x) \)
+   --
    - \( q_6(x) = x^7 \arcsin(x) \)
+   --
    - \( q_7(x) = x^8 \arcsin(x) \)
+   --
    - \( q_8(x) = x^9 \arcsin(x) \)
    - \( q_9(x) = x^{10} \arcsin(x) \)
    - \( q_{10}(x) = x^{11} \arcsin(x) \)
 
 7. For \( r(x) = x^3 \arccos(x) \):
+   --
    - \( r_1(x) = x^3 \arccos(x) \)
+   --
    - \( r_2(x) = x^4 \arccos(x) \)
    - \( r_3(x) = x^5 \arccos(x) \)
    - \( r_4(x) = x^6 \arccos(x) \)
