@@ -739,9 +739,13 @@ Let me know if you need more details on these!
    - \( s_{10}(x) = x^{13} \arctan(x) \)
 
 9. For \( t(x) = x^2 \sech(x) \):
+--
    - \( t_1(x) = x^2 \sech(x) \)
+   --
    - \( t_2(x) = x^3 \sech(x) \)
+   --
    - \( t_3(x) = x^4 \sech(x) \)
+   --
    - \( t_4(x) = x^5 \sech(x) \)
    - \( t_5(x) = x^6 \sech(x) \)
    - \( t_6(x) = x^7 \sech(x) \)
