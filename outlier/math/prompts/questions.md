@@ -748,8 +748,11 @@ Let me know if you need more details on these!
    --
    - \( t_4(x) = x^5 \sech(x) \)
    - \( t_5(x) = x^6 \sech(x) \)
+   --
    - \( t_6(x) = x^7 \sech(x) \)
+   --
    - \( t_7(x) = x^8 \sech(x) \)
+   --
    - \( t_8(x) = x^9 \sech(x) \)
    - \( t_9(x) = x^{10} \sech(x) \)
    - \( t_{10}(x) = x^{11} \sech(x) \)
