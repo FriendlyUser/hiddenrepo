@@ -717,6 +717,7 @@ Let me know if you need more details on these!
    - \( r_1(x) = x^3 \arccos(x) \)
    --
    - \( r_2(x) = x^4 \arccos(x) \)
+   --
    - \( r_3(x) = x^5 \arccos(x) \)
    - \( r_4(x) = x^6 \arccos(x) \)
    - \( r_5(x) = x^7 \arccos(x) \)
@@ -728,7 +729,9 @@ Let me know if you need more details on these!
 
 8. For \( s(x) = x^4 \arctan(x) \):
    - \( s_1(x) = x^4 \arctan(x) \)
+   --
    - \( s_2(x) = x^5 \arctan(x) \)
+   --
    - \( s_3(x) = x^6 \arctan(x) \)
    - \( s_4(x) = x^7 \arctan(x) \)
    - \( s_5(x) = x^8 \arctan(x) \)
