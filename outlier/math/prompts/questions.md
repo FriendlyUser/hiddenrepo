@@ -711,7 +711,9 @@ Let me know if you need more details on these!
    - \( q_8(x) = x^9 \arcsin(x) \)
    --
    - \( q_9(x) = x^{10} \arcsin(x) \)
+   --
    - \( q_{10}(x) = x^{11} \arcsin(x) \)
+   --
 
 7. For \( r(x) = x^3 \arccos(x) \):
    --
