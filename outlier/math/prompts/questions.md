@@ -709,6 +709,7 @@ Let me know if you need more details on these!
    - \( q_7(x) = x^8 \arcsin(x) \)
    --
    - \( q_8(x) = x^9 \arcsin(x) \)
+   --
    - \( q_9(x) = x^{10} \arcsin(x) \)
    - \( q_{10}(x) = x^{11} \arcsin(x) \)
 
