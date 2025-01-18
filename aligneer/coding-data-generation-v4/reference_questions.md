@@ -305,7 +305,7 @@ def multi_operations(a, b):
     add_res = a + b
     sub_res = a - b
     mul_res = a * b
-    div_res = None if b == 0 else a // b
+    div_res = a // b
     return (add_res, sub_res, mul_res, div_res)
 
 # Prompt: If the input is multiple pairs of integers, what would the function outputs be?
